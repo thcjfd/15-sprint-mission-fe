@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  font-family: "Pretendard", sans-serif;
+}
+
+.top-nav-section {
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  width: 1920px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-nav-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1520px;
+  height: 51px;
+}
+
+.sections-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.bestseller-section,
+.search-section,
+.register-section {
+  padding: 8.625rem 21.5rem;
+}
+
+.ad img,
+.bottom-nav img {
+  display: block;
+  margin: 0;
+}
+
+.bottom-nav {
+  width: 1920px;
+  height: 160px;
+  background-color: #111827;
+}
+
+.codeit-text {
+  color: #9ca3af;
+  font-size: 1rem;
+}
+
+.bottom-nav-texts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1920px;
+  height: 20px;
+  padding: 32px 200px;
+}
+
+.bottom-nav-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  height: 20px;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.bottom-nav a {
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+.information-links {
+  display: flex;
+  gap: 30px;
+}
