@@ -18,9 +18,21 @@
           <label for="">이메일</label>
           <input type="email" placeholder="이메일을 입력해주세요" />
           <label for="">비밀번호</label>
-          <input type="password" placeholder="비밀번호를 입력해주세요" />
+          <div class="password-input">
+            <input
+              type="password"
+              class="password-input-field"
+              placeholder="비밀번호를 입력해주세요"
+            />
+            <button type="button" class="visibility-button">
+              <img
+                src="/resources/login/pswd_visibility_off.png"
+                alt="패스워드 보기"
+              />
+            </button>
+          </div>
         </div>
-        <button type="submit">로그인</button>
+        <button type="submit" class="login-button">로그인</button>
       </form>
       <div class="SSO">
         간편 로그인하기
@@ -37,5 +49,6 @@
         <a href="/html/signup.html">회원가입</a>
       </div>
     </main>
+    <script src="/js/login.js"></script>
   </body>
 </html>
