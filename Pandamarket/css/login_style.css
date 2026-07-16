@@ -73,6 +73,7 @@ main {
 }
 
 .login-button {
+  width: 100%;
   border-radius: 40px;
   padding: 16px 124px;
   border: 0;
@@ -81,6 +82,10 @@ main {
   font-size: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.login-button:hover {
+  background-color: #3692ff;
 }
 
 .login-form label {

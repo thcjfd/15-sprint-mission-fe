@@ -1,6 +1,20 @@
 <!doctype html>
 <html>
   <head lang="ko">
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-T27QLJFN");
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="/css/login_style.css" />
     <link
@@ -9,6 +23,16 @@
     />
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-T27QLJFN"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <main>
       <a href="/" class="logo-link">
         <img src="/resources/login/logo.png" alt="판다마켓 로고" />
@@ -58,7 +82,9 @@
             </button>
           </div>
         </div>
-        <button type="submit" class="login-button">로그인</button>
+        <a href="/html/login.html">
+          <button type="button" class="login-button">회원가입</button>
+        </a>
       </form>
       <div class="SSO">
         간편 로그인하기
@@ -75,8 +101,8 @@
         </div>
       </div>
       <div class="login">
-        판다마켓이 처음이신가요?
-        <a href="/html/signup.html">회원가입</a>
+        이미 회원이신가요?
+        <a href="/html/login.html">로그인</a>
       </div>
     </main>
     <script src="/js/password_visibility.js"></script>
