@@ -15,14 +15,40 @@
       </a>
       <form class="login-form">
         <div class="login-form-inputs">
-          <label for="">이메일</label>
-          <input type="email" placeholder="이메일을 입력해주세요" />
-          <label for="">비밀번호</label>
+          <label for="user-email">이메일</label>
+          <input
+            type="email"
+            id="user-email"
+            placeholder="이메일을 입력해주세요"
+          />
+          <label for="user-nickname">닉네임</label>
+          <input
+            type="text"
+            id="user-nickname"
+            placeholder="닉네임을 입력해주세요"
+          />
+          <label for="user-password">비밀번호</label>
           <div class="password-input">
             <input
               type="password"
               class="password-input-field"
+              id="user-password"
               placeholder="비밀번호를 입력해주세요"
+            />
+            <button type="button" class="visibility-button">
+              <img
+                src="/resources/login/pswd_visibility_off.png"
+                alt="패스워드 보기"
+              />
+            </button>
+          </div>
+          <label for="user-password-check">비밀번호 확인</label>
+          <div class="password-input">
+            <input
+              type="password"
+              class="password-input-field"
+              id="user-password-check"
+              placeholder="비밀번호를 다시 한 번 입력해주세요"
             />
             <button type="button" class="visibility-button">
               <img
