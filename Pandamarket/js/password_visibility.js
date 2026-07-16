@@ -3,10 +3,10 @@ const visibilityButtonList = document.querySelectorAll(".visibility-button");
 function toggleVisibility(inputElement, imgElement) {
   if (inputElement.type === "password") {
     inputElement.type = "text";
-    imgElement.src = "/resources/login/pswd_visibility_on.png";
+    imgElement.src = "../resources/login/pswd_visibility_on.png";
   } else {
     inputElement.type = "password";
-    imgElement.src = "/resources/login/pswd_visibility_off.png";
+    imgElement.src = "../resources/login/pswd_visibility_off.png";
   }
 }
 
