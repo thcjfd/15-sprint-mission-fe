@@ -1,10 +1,14 @@
-import ArticleCard from "@/components/ArticleCard/ArticleCard";
+import ArticleList from "@/components/ArticleList/ArticleList";
+import { getArticles  } from "@/lib/api/articles";
+import * as styles from "./page.css.js"
 
-export default function ArticlesPage() {
+export default async function ArticlesPage() {
+  const {list: articles} = await getArticles();
+
   return (
-    <section>
-      <h3>베스트 게시글</h3>
-      <ArticleCard />
+    <section className={styles.container}>
+      <h1 className={styles.title}>베스트 게시글</h1>
+      <ArticleList articles={articles}/>
     </section>
   );
 }
