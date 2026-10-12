@@ -1,14 +1,14 @@
 "use client";
 
 import * as styles from "./Header.css.js";
-import pandaLogo from "@/assets/panda-logo.svg";
+import pandaLogo from "@/assets/images/panda-logo.svg";
 import Image from "next/image.js";
 import Link from "next/link.js";
 import clsx from "clsx";
 import { usePathname } from "next/navigation.js";
 
 const NAV_ITEMS = [
-  { href: "/posts", label: "자유게시판" },
+  { href: "/articles", label: "자유게시판" },
   { href: "/items", label: "중고마켓" },
 ];
 
