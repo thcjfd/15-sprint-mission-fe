@@ -6,6 +6,7 @@ export const vars = createGlobalTheme(":root", {
       100: "#3692FF",
     },
     secondary: {
+      200: "#E5E7EB",
       400: "#9CA3AF",
       600: "#4B5563",
     },

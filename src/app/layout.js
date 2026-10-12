@@ -1,6 +1,7 @@
 import "@/styles/global.css.js";
 import "@/styles/reset.css.js";
 import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 import localFont from "next/font/local";
 
 export const metadata = {
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
       <body className={pretendard.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
