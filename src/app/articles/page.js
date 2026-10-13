@@ -1,8 +1,9 @@
-import BestArticleList from "@/components/BestArticleList/BestArticleList.js";
+import BestArticleList from "@/components/articlesPage/BestArticleList/BestArticleList.js";
 import { getArticles } from "@/lib/api/articles";
 import * as styles from "./page.css";
 import Link from "next/link.js";
-import SearchBar from "@/components/SearchBar/SearchBar";
+import SearchBar from "@/components/articlesPage/SearchBar/SearchBar";
+import SortDropdown from "@/components/articlesPage/SortDropdown/SortDropdown";
 
 export default async function ArticlesPage() {
   const { list: articles } = await getArticles();
@@ -20,7 +21,10 @@ export default async function ArticlesPage() {
           <Link href={"/register"} className={styles.registerButton}>
             글쓰기
           </Link>
-          <SearchBar/>
+        </div>
+        <div className={styles.optionsContainer}>
+          <SearchBar />
+          <SortDropdown />
         </div>
       </section>
     </div>

@@ -1,3 +1,5 @@
+"use client";
+
 import icSearch from "@/assets/images/ic-search.svg";
 import * as styles from "./SearchBar.css";
 import Image from "next/image";

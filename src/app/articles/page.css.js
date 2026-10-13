@@ -23,6 +23,7 @@ export const articlesListContainer = style({
   flexDirection: "column",
   maxWidth: "1200px",
   margin: "40px auto",
+  gap: "24px",
 });
 
 export const articlesListHeader = style({
@@ -37,3 +38,9 @@ export const registerButton = style({
   color: "white",
   fontWeight: "600",
 });
+
+export const optionsContainer = style({
+  display: "flex",
+  alignItems: "center",
+  gap: "16px",
+})

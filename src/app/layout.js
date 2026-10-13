@@ -1,7 +1,7 @@
 import "@/styles/global.css.js";
 import "@/styles/reset.css.js";
-import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
+import Header from "@/components/common/Header/Header";
+import Footer from "@/components/common/Footer/Footer";
 import localFont from "next/font/local";
 
 export const metadata = {

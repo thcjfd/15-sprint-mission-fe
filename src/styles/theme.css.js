@@ -10,6 +10,7 @@ export const vars = createGlobalTheme(":root", {
       200: "#E5E7EB",
       400: "#9CA3AF",
       600: "#4B5563",
+      800: "#1F2937",
     },
     coolGray: {
       50: "#F9FAFB",
