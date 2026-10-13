@@ -1,64 +1,51 @@
-import { style } from "@vanilla-extract/css";
 import { vars } from "@/styles/theme.css";
+import { style } from "@vanilla-extract/css";
 
-export const container = style({
-  background: vars.color.coolGray[50],
+export const articleCardBox = style({
   display: "flex",
-  flexDirection: "column",
-  padding: "46px 24px 16px",
-  borderRadius: "8px",
-  gap: "18px",
-  position: "relative",
+  justifyContent: "space-between",
+  alignItems: "center",
+  background: "#FCFCFC",
+  boxShadow:
+    "0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)",
+  padding: "0 16px 24px",
 });
 
-export const badge = style({
-  position: "absolute",
-  top: "0px",
-  left: "24px",
+export const titleAndProfileInfoBox = style({
+  display: "flex",
+  flexDirection: "column",
+  gap: "16px",
+});
+
+export const profileInfoBox = style({
+  display: "flex",
+  alignItems: "center",
+  gap: "8px",
+});
+
+export const author = style({
+  color: vars.color.secondary[600],
+  fontSize: "14px",
+});
+
+export const date = style({
+  color: vars.color.secondary[400],
+  fontSize: "14px",
+});
+
+export const thumbnailAndLikesInfoBox = style({
+  display: "flex",
+  flexDirection: "column",
+  gap: "16px",
 });
 
 export const thumbnail = style({
-  display: "block",
-  flexShrink: 0,
-  border: `1px solid ${vars.color.coolGray[200]}`,
+  border: `1px solid ${vars.color.coolGray[100]}`,
   padding: "12px",
-  borderRadius: "6px",
-  width: "72px",
-  height: "72px",
+  background: "white",
+  borderRadius: "8px",
 });
 
-export const titleGroup = style({
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "space-between",
-  gap: "8px",
-  minWidth: "336px",
-});
-
-export const title = style({
-  flex: 1,
-  minWidth: 0,
-  overflow: "hidden",
-  display: "-webkit-box",
-  WebkitBoxOrient: "vertical",
-  WebkitLineClamp: 2,
-  wordBreak: "keep-all",
-  fontSize: "20px",
-  fontWeight: "600",
-});
-
-export const articleInfoGroup = style({
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "space-between",
-  gap: "8px",
-  fontSize: "14px",
-  color: vars.color.secondary[400],
-});
-
-export const authorAndLikesGroup = style({
-  display: "flex",
-  alignItems: "center",
-  gap: "8px",
-  color: vars.color.secondary[600],
+export const likes = style({
+  color: vars.color.secondary[500],
 });

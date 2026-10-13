@@ -3,10 +3,6 @@ import { vars } from "@/styles/theme.css";
 
 export const footer = style({
   display: "block",
-  position: "fixed",
-  bottom: 0,
-  left: 0,
-  right: 0,
   background: vars.color.coolGray[900],
   padding: "32px 400px 108px",
 });

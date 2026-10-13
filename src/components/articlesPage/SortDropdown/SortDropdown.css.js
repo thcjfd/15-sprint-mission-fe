@@ -31,7 +31,7 @@ export const rotate = style({
 
 export const dropdownList = style({
   position: "absolute",
-  top: "calc(100%)",
+  top: "100%",
   left: 0,
   margin: 0,
   width: "100%",
@@ -46,6 +46,7 @@ export const dropdownItem = style({
   padding: "12px 20px",
   cursor: "pointer",
   color: vars.color.secondary[800],
+  background: "white",
 
   selectors: {
     "&:not(:last-child)": {

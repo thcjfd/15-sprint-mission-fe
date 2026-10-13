@@ -4,6 +4,7 @@ import * as styles from "./page.css";
 import Link from "next/link.js";
 import SearchBar from "@/components/articlesPage/SearchBar/SearchBar";
 import SortDropdown from "@/components/articlesPage/SortDropdown/SortDropdown";
+import ArticleList from "@/components/articlesPage/ArticleList/ArticleList";
 
 export default async function ArticlesPage() {
   const { list: articles } = await getArticles();
@@ -26,6 +27,7 @@ export default async function ArticlesPage() {
           <SearchBar />
           <SortDropdown />
         </div>
+        <ArticleList articles={articles} />
       </section>
     </div>
   );
