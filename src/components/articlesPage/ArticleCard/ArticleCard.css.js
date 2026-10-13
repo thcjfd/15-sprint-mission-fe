@@ -4,17 +4,16 @@ import { style } from "@vanilla-extract/css";
 export const articleCardBox = style({
   display: "flex",
   justifyContent: "space-between",
-  alignItems: "center",
   background: "#FCFCFC",
   boxShadow:
     "0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)",
-  padding: "0 16px 24px",
+  padding: "16px 16px 24px",
 });
 
 export const titleAndProfileInfoBox = style({
   display: "flex",
   flexDirection: "column",
-  gap: "16px",
+  justifyContent: "space-between",
 });
 
 export const profileInfoBox = style({
@@ -36,7 +35,8 @@ export const date = style({
 export const thumbnailAndLikesInfoBox = style({
   display: "flex",
   flexDirection: "column",
-  gap: "16px",
+  justifyContent: "space-between",
+  alignItems: "flex-end",
 });
 
 export const thumbnail = style({
@@ -48,4 +48,5 @@ export const thumbnail = style({
 
 export const likes = style({
   color: vars.color.secondary[500],
+  lineHeight: "24px",
 });
