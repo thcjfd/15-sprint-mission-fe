@@ -1,5 +1,5 @@
 import ArticleCard from "../ArticleCard/ArticleCard";
-import * as styles from "./ArticleList.css.js"
+import * as styles from "./BestArticleList.css.js"
 
 export default function ArticleList({ articles }) {
   const recentArticles = articles.slice(0, 3);
