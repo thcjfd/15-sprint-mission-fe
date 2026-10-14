@@ -37,6 +37,7 @@ export const thumbnailAndLikesInfoBox = style({
   flexDirection: "column",
   justifyContent: "space-between",
   alignItems: "flex-end",
+  gap: "16px",
 });
 
 export const thumbnail = style({
