@@ -1,10 +1,12 @@
-import BestArticleList from "@/components/articlesPage/BestArticleList/BestArticleList.js";
-import { getArticles } from "@/lib/api/articles";
-import * as styles from "./page.css";
+import BestArticleList from "@/components/articlesPage/List/BestArticleList/BestArticleList.js";
+import { getArticles } from "@/lib/api/articlesAPI";
+import * as styles from "./articlesPage.css";
 import Link from "next/link.js";
 import SearchBar from "@/components/articlesPage/SearchBar/SearchBar";
 import SortDropdown from "@/components/articlesPage/SortDropdown/SortDropdown";
-import ArticleList from "@/components/articlesPage/ArticleList/ArticleList";
+import List from "@/components/articlesPage/List/List";
+import EmptyState from "@/components/common/EmptyState/EmptyState";
+import ArticleCard from "@/components/articlesPage/ArticleCard/ArticleCard";
 
 const ORDER_OPTIONS = ["recent", "likes"];
 
@@ -37,7 +39,11 @@ export default async function ArticlesPage({ searchParams }) {
           <SortDropdown />
         </div>
 
-        <ArticleList articles={articlesData.list} />
+        <List
+          items={articlesData.list}
+          renderItem={(a) => <ArticleCard article={a} />}
+          emptyComponent={<EmptyState />}
+        />
       </section>
     </div>
   );

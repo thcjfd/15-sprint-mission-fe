@@ -1,6 +1,5 @@
 import { vars } from "@/styles/theme.css";
 import { style } from "@vanilla-extract/css";
-import { collectMeta } from "next/dist/build/utils";
 
 export const registerForm = style({
   margin: "0 auto",

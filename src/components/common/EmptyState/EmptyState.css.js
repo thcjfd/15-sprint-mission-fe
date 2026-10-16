@@ -12,8 +12,3 @@ export const emptyText = style({
   fontWeight: "600",
 });
 
-export const articlesList = style({
-  display: "flex",
-  flexDirection: "column",
-  gap: "24px",
-});
